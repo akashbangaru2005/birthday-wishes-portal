@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Wishes Portal</title>
+
+    <meta name="description"
+          content="Search birthday records and send wishes.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="portal-header">
+            <h1>🎂 Birthday Wishes Portal</h1>
+            <p>
+                Search birthdays, view photos, and send wishes.
+            </p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <div class="input-group">
+                <label for="dob">
+                    Select your Date of Birth
+                </label>
+
+                <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    aria-label="Select date of birth">
+            </div>
+
+            <button
+                type="button"
+                id="searchBtn"
+                onclick="searchBirthday()">
+
+                🔍 Search Records
+
+            </button>
+
+        </section>
+
+        <!-- Results -->
+        <section
+            id="result"
+            class="result-area"
+            aria-live="polite">
+
+            <p class="placeholder-text">
+                Enter a date above to begin searching........
+            </p>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <h3>Need More Photos?</h3>
+
+            <p>
+                Contact us for additional birthday memories,
+                photos, and greetings.
+            </p>
+
+            <div class="contact-links">
+
+                <a
+                    href="https://wa.me/91 7095197758"
+                    target="_blank">
+
+                    📱 WhatsApp
+
+                </a>
+
+                <a
+                    href="mailto:akashbangaru227@gmail.com">
+
+                    📧 Email
+
+                </a>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
